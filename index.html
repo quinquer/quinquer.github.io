@@ -4,7 +4,16 @@
 <!-- Head tag -->
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script>
+    (function(){
+        if('{{ page.password }}'){
+            if (prompt('��������������') !== '{{ page.password }}'){
+                alert('�������');
+                history.back();
+            }
+        }
+    })();
+</script>    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content>
@@ -135,13 +144,6 @@
 
                         
                         <li>
-                            <a href="/tags/">Tags</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/about/">About</a>
                         </li>
                         
@@ -150,6 +152,13 @@
                         
                         <li>
                             <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
                         </li>
                         
                     
@@ -209,6 +218,34 @@
             
                 <!-- Main Content -->
 
+
+<div class="post-preview">
+
+    <a href="/2019/04/26/test/">
+        <h2 class="post-title">
+            Untitled
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            
+{}
+...
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by Quinquer on
+            2019-04-26
+        </p>
+        <div class="tags">
+            
+        </div>
+    
+
+</div>
+<hr>
 
 <div class="post-preview">
 
@@ -322,6 +359,10 @@
   <h5>RECENT POSTS
   <div class="widget">
     <ul>
+      
+        <li>
+          <a href="/2019/04/26/test/">(no title)</a>
+        </li>
       
         <li>
           <a href="/2019/04/25/HEXO-搭建成功！/">HEXO-搭建成功！</a>
