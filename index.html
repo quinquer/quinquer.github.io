@@ -1,22 +1,4 @@
-<!DOCTYPE html><div id="pjax-container">
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            {% block content %}{% endblock %}
-          </div>
-          {% include '_third-party/duoshuo-hot-articles.swig' %}
-          {% include '_partials/comments.swig' %}
-        </div>
-        {% if theme.sidebar.display !== 'remove' %}
-          {% block sidebar %}{% endblock %}
-        {% endif %}
-      </div>
-      //��������Լ�д��swig����Ϊ��Ҫ�õ�post��password�����������Լ������
-      //��������м�����pjax��Ҫ����pjax��container�У�ÿ��ˢ�»����¼���container�е����ݣ�Ҳ��Ĭ�����¼�����������򵥵�js�ˣ����û�м���pjax�Ļ���λ�þͲ���Ҫ��
-      {% include 'password.swig' %}
-    </main>
-</div>
+<!DOCTYPE html>
 <html lang="en">
 
 <!-- Head tag -->
@@ -153,6 +135,13 @@
 
                         
                         <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
                             <a href="/archive/">Archives</a>
                         </li>
                         
@@ -161,13 +150,6 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
-                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -226,42 +208,6 @@
             
                 <!-- Main Content -->
 
-
-<div class="post-preview">
-
-    <a href="/2019/04/26/test/">
-        <h2 class="post-title">
-            test
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            Fran Wilde
-140 Bethlehem Pike
-Philadelphia, PA 19118
-fran.wilde@gmail.com
-9,810 words
-
-MAYOR FOR TODAY
-今日市长
-by Fran Wilde
-作者:弗兰·王尔德
-When dispatch sent me the job, I admit I had concerns. Nothing sp......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by Quinquer on
-            2019-04-26
-        </p>
-        <div class="tags">
-            
-        </div>
-    
-
-</div>
-<hr>
 
 <div class="post-preview">
 
@@ -375,10 +321,6 @@ When dispatch sent me the job, I admit I had concerns. Nothing sp......
   <h5>RECENT POSTS
   <div class="widget">
     <ul>
-      
-        <li>
-          <a href="/2019/04/26/test/">test</a>
-        </li>
       
         <li>
           <a href="/2019/04/25/HEXO-搭建成功！/">HEXO-搭建成功！</a>

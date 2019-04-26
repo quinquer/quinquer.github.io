@@ -1,22 +1,4 @@
-<!DOCTYPE html><div id="pjax-container">
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            {% block content %}{% endblock %}
-          </div>
-          {% include '_third-party/duoshuo-hot-articles.swig' %}
-          {% include '_partials/comments.swig' %}
-        </div>
-        {% if theme.sidebar.display !== 'remove' %}
-          {% block sidebar %}{% endblock %}
-        {% endif %}
-      </div>
-      //��������Լ�д��swig����Ϊ��Ҫ�õ�post��password�����������Լ������
-      //��������м�����pjax��Ҫ����pjax��container�У�ÿ��ˢ�»����¼���container�е����ݣ�Ҳ��Ĭ�����¼�����������򵥵�js�ˣ����û�м���pjax�Ļ���λ�þͲ���Ҫ��
-      {% include 'password.swig' %}
-    </main>
-</div>
+<!DOCTYPE html>
 <html lang="en">
 
 <!-- Head tag -->
@@ -163,6 +145,13 @@
 
                         
                         <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
                             <a href="/archive/">Archives</a>
                         </li>
                         
@@ -171,13 +160,6 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
-                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -259,10 +241,6 @@
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
-                    
-                        <li class="previous">
-                            <a href="/2019/04/26/test/" data-toggle="tooltip" data-placement="top" title="test">&larr; Previous Post</a>
-                        </li>
                     
                     
                 </ul>
